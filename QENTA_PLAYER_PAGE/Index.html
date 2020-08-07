@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>PRUEBA TECNICA - CONSULTA DE JUGADORES</title>
+    <!--Jquery-->
+    <script type="text/javascript" src="Scripts/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+</head>
+<body>
+    <h1>GESTION DE JUGADORES</h1>
+    <h2>BUSQUEDA DE JUGADORES</h2>
+    <label>ID Jugador</label>
+    <input type="text" id="txtBuscarId" value="" />
+    <input type="button" id="btnBuscarJugador" value="BUSCAR JUGADOR" />
+
+    <h2>EDICION DE JUGADORES</h2>
+    <label>ID</label><input type="text" id="txtId" value="" /><br />
+    <label>FirstName</label><input type="text" id="txtFirst_name" value="" /><br />
+    <label>LastName</label><input type="text" id="txtLast_nam" value="" /><br />
+    <label>Position</label><input type="text" id="txtPosition" value="" /><br />
+    <label>Height Feet</label><input type="text" id="txtHeight_feet" value="" /><br />
+    <label>Height Inches</label><input type="text" id="txtHeight_inches" value="" /><br />
+    <label>Weight Pounds</label><input type="text" id="txtWeight_pounds" value="" /><br />
+    <input type="button" id="btnActualizarJugador" value="ACTUALIZAR JUGADOR" />
+
+    <br />
+    <h2>LISTADO DE JUGADORES</h2>
+    <table class="table table-striped table-condensed"  id="tblPlayers" name="tblPlayers">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>First_name</th>
+                <th>Last_nam</th>
+                <th>Position</th>
+                <th>Height_feet</th>
+                <th>Height_inches</th>
+                <th>Weight_pounds</th>
+            </tr>
+        </thead>
+        <tbody class="tblPlayersBody"></tbody>
+    </table>
+
+    <script src="Scripts/Players.js"></script>
+</body>
+</html>
